@@ -27,9 +27,9 @@ function Navbar()
                     <a href="https://shafiilsadat013.github.io/ThroughMyLens/"><button className="btn">Through My Lens</button></a>
                     <a href="https://youtu.be/gCKwgLgb2Z4?si=9jgKarViEll-ps7v"><button className="btn">Listen To My Favourite Song</button></a>
                 </div>
-                <div className="banner-image">
+            </div>
+            <div className="banner-image">
                      <img src="images/Adobe Express - file.png" alt="" />
-                </div>
             </div>
         </section>
     </header>
