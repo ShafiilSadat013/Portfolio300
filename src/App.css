@@ -8,6 +8,106 @@ body{
     box-sizing: border-box;
 }
 
+/* dark mode apply */
+
+
+
+.dark-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dark-mode .top {
+    background-color: #121212;
+    background-image: url("/images/pictwo.png"), url("/images/picOne.png");
+}
+
+.dark-mode nav .menu a {
+    color: white;
+}
+#banner .banner-content h2 {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+#banner .banner-content h1 {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+#banner .banner-content p {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+
+.dark-mode #about {
+    background-color: #121212;
+}
+
+.dark-mode #about .about-container {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #about .info-card {
+    background-color: #252525;
+    color: white;
+}
+.dark-mode #about .info-card p,
+.dark-mode #about .info-card h4 {
+    color: white;
+}
+
+.dark-mode #skills {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode #skills .skill-card {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #skills .skill-card h3,
+.dark-mode #skills .skill-card p {
+    color: white;
+}
+
+.dark-mode #resume {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode #resume .resume-card {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #resume .card-title,
+.dark-mode #resume .card-info,
+.dark-mode #resume .section-title {
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode footer h2,
+.dark-mode footer p {
+    color: white;
+}
+.dark-mode .section-heading {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode .section-heading h2 {
+    color: white;
+}
+.dark-mode .section-heading p {
+    color: #cccccc;
+}
+
 /* fonts d */
 .font-open-sans{
   font-family: "Open Sans", sans-serif;
