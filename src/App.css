@@ -8,16 +8,14 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
-
-
 /* smooth transition here */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
+
+
+
 /* dark mode apply */
 
 /* darkmode transition */
@@ -27,6 +25,7 @@ html {
                 color 0.4s ease,
                 border-color 0.4s ease;
 }
+
 .dark-btn {
     position: fixed;
     right: 25px;
@@ -147,26 +146,30 @@ html {
   /* font-weight: <weight>;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100; */
+    "width" 100; */
 }
 
+/* SDT */
 .logo h2{
     font-size: 45px;
+    border: 4px solid white;
+    padding: 2px;
+    border-radius: 20px;
     font-weight: 900;
     color: whitesmoke;
     background-color: rgb(202,143,122);
 }
 
-
+/*  */
 .color-orange{
     color: whitesmoke;
 }
 /* buttons are here */
 .btn{
-    background-color: rgb(202,143,122);
-    border: 3px solid orangered;
+    background-color: orangered;
+    border: 4px solid white;
     padding: 18px 35px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -183,12 +186,12 @@ html {
 } 
 
 .btn:hover{
-    background-color: orangered;
+    background-color: red;
     color: white;
     transform: scale(1.05);
 }
 
-/* top banner */
+/* top banner  or hero */
 .top{
 
     background-color: bisque;
@@ -234,24 +237,30 @@ nav .menu{
     align-items: center;
 }
 
-/* top right menu's design */
+/* top right menu's design and writings inside menu */
 nav .menu a{
     font-size: 20px;
     font-weight: bolder;
     background-color: orangered;
     border: 5px solid white;
+    border-radius: 15px;
     color: white;
     padding: 5px;
     text-decoration: none;
 }
 
+nav .menu a:hover{
+    background-color: red;
+    transform: scale(1.5);
+}
 
-/* Hamburger hidden on desktop */
+
+/* Hamburger hidden on desktop. won't be visible */
 .hamburger {
     display: none;
 }
 
-/* mobile navbar */
+/* mobile navbar , will be shown only in mobile*/
 
 @media (max-width: 576px) {
 
@@ -261,10 +270,8 @@ nav .menu a{
         justify-content: center;
         align-items: center;
         gap: 5px;
-
         width: 45px;
         height: 45px;
-
         background-color: orangered;
         border: 4px solid white;
         border-radius: 10px;
@@ -297,26 +304,24 @@ nav .menu a{
         position: absolute;
         top: 70px;
         right: 0;
-
         flex-direction: column;
         gap: 20px;
-
-        padding: 25px;
-
+        padding: 12px;
         list-style: none;
 
-        background-color: rgba(255, 228, 196, 0.95);
+        background-color: red;
         backdrop-filter: blur(10px);
 
         border-radius: 10px;
     }
 
-    /* Dark mode */
+    /* hamburger in dark-mode */
 
     .dark-mode .hamburger span {
         background-color: white;
     }
 
+    /* when opened in dark mode bg will be black */
     .dark-mode nav .menu.active {
         background-color: rgba(18, 18, 18, 0.95);
     }
@@ -384,7 +389,7 @@ nav .menu a{
     vertical-align: auto;
 }
 
-/* heading styling for section heading*/
+/* heading styling for section heading */
 .section-heading{
     font-weight: bold;
     font-size: 40px;
@@ -403,18 +408,19 @@ nav .menu a{
     color: #757575;
 }
 
+/* about me,what i do */
 .section-heading h2{
     font-size: 45px;
     font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
     color: whitesmoke;
-    background-color: rgb(202, 143, 122);
+    background-color: orangered;
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
     margin-bottom: 30px;
-    border: 3px solid orangered;
+    border: 3px solid white;
 }
 
 /* about section */
@@ -443,25 +449,38 @@ nav .menu a{
 /* cards informations */
 
 .about-info .info-card{
+    width: 100%;
     border: 2px solid orangered;
-    padding: 5px 5px 5px 5px;
-    border-radius: 0px;
+    padding: 5px 5px 10px 5px;
+    border-radius: 15px;
     box-shadow: 10px 10px 10px orangered;
     background-color: rgb(202, 143, 122);
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
+/* info card heading */
 .about-info .info-card p{
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: 30px;
     color: whitesmoke;
     font-weight: bold;
 }
+
+/* info cards writing */
 .about-info .info-card h4{
 
     font-size: 30;
     color: whitesmoke;
+}
+
+/* when clicked info cards hover */
+.info-card:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* Skills styling here */
@@ -501,7 +520,14 @@ nav .menu a{
     border-radius: 15px;
 
 }
+/* when clicked skill cards hover */
+.skill-card:hover{
+    background-color: bisque;
+    color: white;
+    transform: scale(1.05);
+}
 
+/* logos of skill cards */
 .skill-box img{
     width: 70px;
     height: 70px;
@@ -514,7 +540,7 @@ nav .menu a{
     color: gray;
     margin-bottom: 20px;
 }
-/* heading of skill card paragraphs */
+/* writing of skill card paragraphs */
 .skill-card p{
     font-size: 20px;
     color:black;
@@ -552,6 +578,8 @@ nav .menu a{
     padding: 10px; */
 
 }
+
+/* my education and experience */
 .resume-container .section-title{
 
     color: black;
@@ -571,6 +599,8 @@ nav .menu a{
 
 
 }
+
+/* exam name */
 .resume-card  .card-title{
     font-size: 25px;
     font-weight: bold;
@@ -578,12 +608,21 @@ nav .menu a{
     color: #474747;
 
 }
+
+/* institute name */
 .resume-card .card-info{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #757575;
 
+}
+
+/* resume cards will be hover from here */
+.resume-card:hover{
+    background-color: bisque;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* footer part */
@@ -616,6 +655,7 @@ footer .footer-container{
     max-width: 662px;
 } */
 
+/* let's connect */
 .footer-container h2{
 
     font-size: 40px;
@@ -623,6 +663,7 @@ footer .footer-container{
     margin-bottom: 20px;
 }
 
+/* the writing */
 .footer-container p{
         
     font-size: 25px;
@@ -639,11 +680,9 @@ footer .footer-container{
 }
 
 
-/* .hide{
-    display: none !important;
-} */
-
 /* responsiveness added in this part for different components */
+
+/* for mobile */
 @media screen and (max-width:576px){
 
     #about .about-container{
@@ -783,12 +822,6 @@ nav{
 
 nav .menu{
     display: none;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: 30px; */
-    /* align-items: center; */
 }
 
 
