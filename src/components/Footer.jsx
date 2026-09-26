@@ -2,7 +2,7 @@ import React from "react";
 export default function Footer(){
     return(
         <>
-        <footer>
+        <footer id="footer">
             <section className="footer-container">
                 <div className="social">
                     <h2>Let's Connect</h2>

@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import Cursor from "./components/Cursor";
 
 function App()
 {
@@ -14,8 +15,9 @@ function App()
     <>
     {/* navbar and hero different class to show the bg image properly */}
 
+            <Cursor />
       <div className={darkMode ? "dark-mode" : ""}> 
-            <div className="top">
+            <div className="top" id="top">
                 <Navbar />
                 <Hero />
             </div>

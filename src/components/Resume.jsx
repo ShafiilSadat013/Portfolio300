@@ -3,7 +3,7 @@ export default function Resume()
 {
     return(
         <>
-        <section id="resume">
+    <section id="resume">
         <div className="section-heading">
             <h2>A SUMMARY OF MY RESUME</h2>
         </div>
