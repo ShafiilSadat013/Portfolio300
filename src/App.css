@@ -1,0 +1,1163 @@
+body{
+    background-color: bisque;
+    /* cursor: none; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* smooth transition here */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+
+/* dark mode apply */
+
+/* darkmode transition */
+.dark-mode,
+.dark-mode * {
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                border-color 0.4s ease;
+}
+
+.dark-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dark-mode .top {
+    background-color: #121212;
+    background-image: url("/images/pictwo.png"), url("/images/picOne.png");
+}
+
+.dark-mode nav {
+    /* background: rgba(18, 18, 18, 0.85); */
+    /* transform: translateY(-90px); */
+}
+
+.dark-mode nav .menu a {
+    background-color: orangered;
+    border: 4px solid white;
+    display: ;
+    color: white;
+
+}
+#banner .banner-content h2 {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+#banner .banner-content h1 {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+#banner .banner-content p {
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+}
+
+.dark-mode #about {
+    background-color: #121212;
+}
+
+.dark-mode #about .about-container {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #about .info-card {
+    background-color: #252525;
+    color: white;
+}
+.dark-mode #about .info-card p,
+.dark-mode #about .info-card h4 {
+    color: white;
+}
+
+.dark-mode #skills {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode #skills .skill-card {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #skills .skill-card h3,
+.dark-mode #skills .skill-card p {
+    color: white;
+}
+
+.dark-mode #resume {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode #resume .resume-card {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode #resume .card-title,
+.dark-mode #resume .card-info,
+.dark-mode #resume .section-title {
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode footer h2,
+.dark-mode footer p {
+    color: white;
+}
+.dark-mode .section-heading {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode .section-heading h2 {
+    color: white;
+}
+.dark-mode .section-heading p {
+    color: #cccccc;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+    display: flow-root;
+}
+
+/* fonts d */
+.font-open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100; */
+}
+
+/* SDT */
+.logo h2{
+    font-size: 45px;
+    border: 4px solid white;
+    padding: 2px;
+    border-radius: 20px;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color: rgb(202,143,122);
+}
+
+/*  */
+.color-orange{
+    color: whitesmoke;
+}
+/* buttons are here */
+.btn{
+    background-color: orangered;
+    border: 4px solid white;
+    padding: 18px 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-grp{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ 
+} 
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* top banner  or hero */
+.top{
+
+    background-color: bisque;
+    background: url("/images/pictwo.png"),url("/images/picOne.png"),bisque;
+    background-position: bottom right,top left;
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+    
+    padding-top: 100px;
+}
+
+/* nav{
+    width: 71%;
+    max-width: 1600px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    
+} */
+ nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 14.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(224, 122, 122, 0.85); */
+    /* backdrop-filter: blur(10px); */
+}
+
+nav .menu{
+    display: flex;
+    list-style: none;
+    gap: 51px;
+    align-items: center;
+}
+
+/* top right menu's design and writings inside menu */
+nav .menu a{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: orangered;
+    border: 5px solid white;
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    background-color: red;
+    transform: scale(1.5);
+}
+
+
+/* Hamburger hidden on desktop. won't be visible */
+.hamburger {
+    display: none;
+}
+
+/* mobile navbar , will be shown only in mobile*/
+
+@media (max-width: 576px) {
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 45px;
+        height: 45px;
+        background-color: orangered;
+        border: 4px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px;
+        position: relative;
+        right: -190px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transform: ;
+    }
+
+    /* Hide desktop menu */
+
+    nav .menu {
+        display: none;
+    }
+
+    /* Show menu when hamburger is clicked */
+
+    nav .menu.active {
+        display: flex;
+
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px;
+        list-style: none;
+
+        background-color: red;
+        backdrop-filter: blur(10px);
+
+        border-radius: 10px;
+    }
+
+    /* hamburger in dark-mode */
+
+    .dark-mode .hamburger span {
+        background-color: white;
+    }
+
+    /* when opened in dark mode bg will be black */
+    .dark-mode nav .menu.active {
+        background-color: rgba(18, 18, 18, 0.95);
+    }
+}
+
+
+
+#banner{
+    margin: 50px 164px 0 164px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .banner-content{
+    max-width: 585px;
+}
+
+/* hi i am part */
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+
+}
+/* Sadat */
+#banner .banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+}
+/* paragraph after intro */
+#banner .banner-content p{
+    font-size: 40px;
+    color: #757575;
+    line-height: 43px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    border: 3px solid orangered;
+}
+
+#banner .banner-image img{
+    max-width: 585px;
+    vertical-align: auto;
+}
+
+/* heading styling for section heading */
+.section-heading{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: bisque;
+    display: inline-block;
+    /* border: 3px solid orangered; */
+    padding: 5px 5px 5px 5px;
+    color: whitesmoke;
+}
+.section-heading p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: #757575;
+}
+
+/* about me,what i do */
+.section-heading h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    background-color: orangered;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 3px solid white;
+}
+
+/* about section */
+#about{
+    padding: 130px 130px 130px 130px;
+}
+
+#about .about-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+    padding: 131px 156px;
+    border: 3px solid orangered;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px orangered;
+}
+
+/* cards of about part */
+#about .about-container .about-info{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* cards informations */
+
+.about-info .info-card{
+    width: 100%;
+    border: 2px solid orangered;
+    padding: 5px 5px 10px 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px orangered;
+    background-color: rgb(202, 143, 122);
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+/* info card heading */
+.about-info .info-card p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* info cards writing */
+.about-info .info-card h4{
+
+    font-size: 30;
+    color: whitesmoke;
+}
+
+/* when clicked info cards hover */
+.info-card:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Skills styling here */
+#skills{
+    padding-top: 130px;
+}
+
+#skills .section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#skills .section-heading h2 {
+    display: inline-block;
+}
+
+#skills .skills-container{
+
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+/* Skill cards styling*/
+#skills .skills-container .skill-box{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 100px;
+
+}
+
+.skill-box .skill-card{
+    padding: 30px;
+    border: 5px solid orangered; 
+    max-width: 270px;
+    box-shadow: 10px 10px 10px rgb(202, 143, 122);
+    border-radius: 15px;
+
+}
+/* when clicked skill cards hover */
+.skill-card:hover{
+    background-color: bisque;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* logos of skill cards */
+.skill-box img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+/* heading of skill cards */
+.skill-card h3{
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 20px;
+}
+/* writing of skill card paragraphs */
+.skill-card p{
+    font-size: 20px;
+    color:black;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+
+/* resume part */
+
+#resume{
+    padding-top: 130px;
+}
+
+#resume .section-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume .section-heading h2 {
+    display: block;
+    margin: 0 auto;
+}
+
+#resume .resume-container{
+
+    width: 71%;
+    max-width: 1140px;
+    margin: 113px auto 0;
+    display: flex;/* education and experience  side by side*/
+    gap: 24px;
+    /* border: 2px solid orangered;
+    padding: 10px; */
+
+}
+
+/* my education and experience */
+.resume-container .section-title{
+
+    color: black;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.resume-card{
+    
+    max-width: 511px;
+    margin-right: 47px;
+    border: 5px solid orangered;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px  rgb(202, 143, 122);
+
+
+}
+
+/* exam name */
+.resume-card  .card-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #474747;
+
+}
+
+/* institute name */
+.resume-card .card-info{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #757575;
+
+}
+
+/* resume cards will be hover from here */
+.resume-card:hover{
+    background-color: bisque;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* footer part */
+footer{
+    margin-top: 130px;
+    background-color: bisque;
+    padding: 130px 130px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+footer .footer-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    /* display: flex; */
+    align-items: center;
+    border: 5px solid orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 10px rgb(202, 143, 122);
+    border-radius: 15px;
+
+}
+/* 
+.footer-container{
+    
+    max-width: 662px;
+} */
+
+/* let's connect */
+.footer-container h2{
+
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* the writing */
+.footer-container p{
+        
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-container .icons a{
+    margin-right: 30px;
+}
+
+.footer-container .icons a img{
+    width: 64px;
+    height: 64px;
+}
+
+
+/* responsiveness added in this part for different components */
+
+/* for mobile */
+@media screen and (max-width:576px){
+
+    #about .about-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px orangered;
+
+
+   }
+   #about .about-container .about-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+
+    }
+
+    #skills .skills-container{
+
+    width: 95%;
+    /* max-width: 1140px;
+    margin: 0 auto; */
+
+  }
+  .section-heading h2{
+    font-weight: bold;
+    font-size: 30px;
+    /* margin-bottom: 30px; */
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    border: 3px solid orangered;
+    padding: 1px 1px 1px 1px;
+    color: whitesmoke;
+}
+    
+    #skills{
+    padding-top: 60px;
+   }
+   #skills .skills-container .skill-box{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+    margin-bottom: 100px;
+
+    }
+
+    .skill-box .skill-card{
+    padding: 30px;
+    border: 5px solid orangered; 
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgb(202, 143, 122);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    }
+    footer .footer-container{
+
+    width: 95%;
+    /* max-width: 1140px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 5px solid orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 10px rgb(202, 143, 122);
+    border-radius: 15px; 
+
+    }
+    
+    footer{
+    padding: 40px 15px;
+    }
+
+  footer .icons{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 20px;
+    }
+
+  .footer-container .icons a{
+    margin-right: 0; 
+    }
+
+
+    #resume .resume-container{
+    width: 95%;
+    margin-top: 60px;
+    /* max-width: 1140px; */
+    /* margin: 18px auto 0; */
+    display: flex;/* education and experience  side by side*/
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid orangered;
+    padding: 10px; */
+
+}
+
+   .resume-card{
+    
+    max-width: 95%;
+    margin-right: 10px;
+    /* margin-right: 47px; */
+    border: 5px solid orangered;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px  rgb(202, 143, 122);
+
+
+  }
+  nav{
+    width: 95%;
+    /* max-width: 1600px; */
+    /* border: 1px solid red; */
+    /* margin: 0px auto; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+nav{
+    gap: 20px;
+}
+
+nav .menu{
+    display: none;
+}
+
+
+
+#banner{
+    /* border: 1px solid red; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#banner .banner-image img{
+
+    width: 100%;
+    /* vertical-align: middle; */
+
+}
+
+/* #banner .banner-content p{
+
+} */
+
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+
+}
+/* Sadat */
+#banner .banner-content h1{
+    font-size: 43;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+}
+
+.logo h2{
+    visibility: collapse;
+}
+
+.btn-grp{
+
+  justify-content: center;
+ 
+} 
+nav .menu a{
+
+    font-size: 20px;
+    color: #474747;
+    text-decoration: none;
+    background-color: rgb(202, 143, 122);
+    border: 3px solid orangered;
+    padding: 5px;
+    color: white;
+
+}
+
+#banner .banner-content p{
+
+    font-size: 20px;
+    
+}
+    
+}
+
+
+/* tablet */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    
+    #about .about-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px orangered;
+
+
+   }
+   #about .about-container .about-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+
+    }
+
+    #skills .skills-container{
+
+    width: 95%;
+    /* max-width: 1140px;
+    margin: 0 auto; */
+
+  }
+  .section-heading h2{
+    font-weight: bold;
+    font-size: 30px;
+    /* margin-bottom: 30px; */
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    border: 3px solid orangered;
+    padding: 1px 1px 1px 1px;
+    color: whitesmoke;
+}
+    
+    #skills{
+    padding-top: 60px;
+   }
+   #skills .skills-container .skill-box{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+    margin-bottom: 100px;
+
+    }
+
+    .skill-box .skill-card{
+    padding: 30px;
+    border: 5px solid orangered; 
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgb(202, 143, 122);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    }
+    footer .footer-container{
+
+    width: 95%;
+    /* max-width: 1140px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 5px solid orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 10px rgb(202, 143, 122);
+    border-radius: 15px; 
+
+    }
+    
+    footer{
+    padding: 40px 15px;
+    }
+
+  footer .icons{
+    display: flex;
+    /* flex-direction: column;   */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+
+  .footer-container .icons a{
+    margin-right: 0; 
+    }
+
+
+    #resume .resume-container{
+    width: 95%;
+    margin-top: 60px;
+    /* max-width: 1140px; */
+    /* margin: 18px auto 0; */
+    display: flex;/* education and experience  side by side*/
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid orangered;
+    padding: 10px; */
+
+}
+
+   .resume-card{
+    
+    max-width: 95%;
+    margin-right: 10px;
+    /* margin-right: 47px; */
+    border: 5px solid orangered;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px  rgb(202, 143, 122);
+
+
+  }
+  nav{
+    width: 95%;
+    /* max-width: 1600px; */
+    /* border: 1px solid red; */
+    /* margin: 0px auto; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+nav{
+    gap: 20px;
+}
+
+nav .menu{
+    background: none;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    transform: translateY(-70px);
+    /* align-items: center; */
+}
+nav .menu a{
+
+    font-size: 20px;
+    color: #474747;
+    text-decoration: none;
+    background-color: rgb(202, 143, 122);
+    border: 3px solid orangered;
+    padding: 5px;
+    color: white;
+
+}
+
+
+#banner{
+    /* border: 1px solid red; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#banner .banner-image img{
+
+    width: 100%;
+    /* vertical-align: middle; */
+
+}
+
+/* #banner .banner-content p{
+
+} */
+
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+
+}
+/* Sadat */
+#banner .banner-content h1{
+    font-size: 43;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: rgb(202, 143, 122);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid orangered;
+}
+
+.logo h2{
+    visibility: collapse;
+}
+
+.btn-grp{
+
+  justify-content: center;
+ 
+} 
+
+#banner .banner-content p{
+
+    font-size: 20px;
+    
+}
+}
+
+/* custom cursor styling here */
+.custom-cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    /* Bright orange core */
+    background: rgba(255, 140, 0, 0.35);
+
+    /* Hot orange border */
+    border: 2px solid rgba(255, 180, 50, 1);
+
+    /* INSANE orange glow 🔥 */
+    box-shadow:
+        0 0 10px rgba(255, 140, 0, 1),
+        0 0 25px rgba(255, 120, 0, 1),
+        0 0 50px rgba(255, 100, 0, 0.95),
+        0 0 90px rgba(255, 80, 0, 0.8),
+        0 0 140px rgba(255, 60, 0, 0.6),
+        0 0 200px rgba(255, 40, 0, 0.4);
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+}
