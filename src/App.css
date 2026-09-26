@@ -192,7 +192,7 @@ html {
 .top{
 
     background-color: bisque;
-    background: url("/images/pictwo.png"),url("../images/picOne.png"),bisque;
+    background: url("/images/pictwo.png"),url("/images/picOne.png"),bisque;
     background-position: bottom right,top left;
     background-repeat: no-repeat;
     background-size: 800px 800px;
